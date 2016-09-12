@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.virra.miaplicacion2.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Formulario"
+
+        android:textSize="20dp"
+        android:id="@+id/txt1"
+        />
+
+
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/contenedinombre"
+        android:layout_below="@id/txt1"
+        >
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="15"
+        android:id="@+id/txtnombre"
+        android:hint="@string/nombre"
+        android:layout_below="@+id/contenedinombre"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="77dp" />
+
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contenedinombre"
+        android:id="@+id/conteneditelefono"
+
+        >
+
+        <EditText
+            android:id="@+id/txttelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/telefono"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="7dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/conteneditelefono"
+        android:id="@+id/contenediemail"
+                >
+
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="7dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="158dp"
+        android:id="@+id/contenedifecha"
+        android:scrollbarSize="1dp"
+        android:scaleX=".7"
+        android:scaleY=".7"
+      android:layout_below="@+id/contenediemail" />
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenedicontacto"
+        android:layout_below="@id/contenedifecha"
+        >
+
+        <EditText
+            android:id="@+id/txtcontacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="@string/contacto"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="7dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_marginStart="54dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:id="@+id/button2"
+        android:layout_below="@+id/contenedicontacto"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp"
+        android:textSize="20dp"
+
+        android:theme="@style/RaiseButton"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MiAplicacion#2</string>
+    <string name="nombre">Digite su Nombre Completo</string>
+    <string name="telefono">Digite Su Telefono</string>
+    <string name="email">Digite Su Correo</string>
+    <string name="contacto">Descripcion del Contacto</string>
+    <string name="fecha">Digite Su fecha</string>}
+    <string name="saludo">En Contruccion</string>
+</resources>
