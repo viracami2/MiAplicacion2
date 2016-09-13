@@ -36,6 +36,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        Bundle parametros = getIntent().getExtras();
+        String nombree = parametros.getString("nombre");
+        String tel = parametros.getString("telefono");
+        String emaill = parametros.getString("email");
+        String contactoo = parametros.getString("contacto");
+
+        txtnombre.setText(nombree);
+        txttelefono.setText(tel);
+        txtemail.setText(emaill);
+        txtcontacto.setText(contactoo);
+
+
     }
 
     public void enviarDatos() {

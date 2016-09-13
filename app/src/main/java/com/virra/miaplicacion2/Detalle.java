@@ -1,7 +1,7 @@
 package com.virra.miaplicacion2;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -46,6 +46,18 @@ public class Detalle extends AppCompatActivity {
     @OnClick(R.id.btnmodi)
     public void onClick(View view) {
         //Snackbar.make(view, getResources().getString(R.string.saludo), Snackbar.LENGTH_LONG).show();
-        Snackbar.make(view,getResources().getString(R.string.saludo),Snackbar.LENGTH_LONG).show();
+        //Snackbar.make(view,getResources().getString(R.string.saludo),Snackbar.LENGTH_LONG).show();
+
+        String nombree = nombre.getText().toString().trim();
+        String telefonoo = telefono.getText().toString().trim();
+        String emaill = email.getText().toString().trim();
+        String contactoo = contacto.getText().toString().trim();
+
+        Intent intent = new Intent(Detalle.this, MainActivity.class);
+        intent.putExtra("nombre", nombree);
+        intent.putExtra("telefono", telefonoo);
+        intent.putExtra("email", emaill);
+        intent.putExtra("contacto", contactoo);
+        startActivity(intent);
     }
 }
